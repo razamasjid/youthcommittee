@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Raza Masjid Youth Committee - Activities</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            background-color: #1a1a1a;
+            color: white;
+            text-align: center;
+            padding: 2rem 0;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('header-bg.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .subtitle {
+            font-style: italic;
+            margin-bottom: 1rem;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        
+        .back-btn {
+            display: inline-block;
+            background-color: #333;
+            color: white;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+        }
+        
+        .back-btn:hover {
+            background-color: #555;
+        }
+        
+        .gallery-tabs {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+        
+        .tab-btn {
+            padding: 10px 20px;
+            background-color: #ddd;
+            border: none;
+            cursor: pointer;
+            font-size: 1rem;
+            margin: 0 5px;
+            border-radius: 5px 5px 0 0;
+        }
+        
+        .tab-btn.active {
+            background-color: #333;
+            color: white;
+        }
+        
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+        
+        .gallery-item {
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+            background-color: white;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .gallery-item video {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            display: block;
+        }
+        
+        .item-caption {
+            padding: 15px;
+            text-align: center;
+        }
+        
+        .item-date {
+            color: #777;
+            font-size: 0.9rem;
+            display: block;
+            margin-top: 5px;
+        }
+        
+        .video-tab, .image-tab {
+            display: none;
+        }
+        
+        .video-tab.active, .image-tab.active {
+            display: block;
+        }
+        
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1.5rem;
+            margin-top: 3rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Raza Masjid Youth Committee Activities</h1>
+        <p class="subtitle">United in Imaan, Strengthened by Brotherhood, Committed to the Ummah.</p>
+    </header>
+    
+    <div class="container">
+        <a href="index.html" class="back-btn">← Back to Home</a>
+        
+        <div class="gallery-tabs">
+            <button class="tab-btn active" data-tab="image">Images</button>
+            <button class="tab-btn" data-tab="video">Videos</button>
+        </div>
+        
+        <div class="image-tab active">
+            <div class="gallery">
+                <!-- Replace with your actual images -->
+                <div class="gallery-item">
+                    <img src="2025 Iftaar _1.jpg" alt="Community Iftar">
+                    <div class="item-caption">
+                        Community Iftar Program
+                        <span class="item-date">Ramadan 2025</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="2025 Iftaar _2.jpg" alt="Community Iftar">
+                    <div class="item-caption">
+                        Community Iftar Program
+                        <span class="item-date">Ramadan 2025</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="2025 Iftaar _3.jpg" alt="Community Iftar">
+                    <div class="item-caption">
+                        Community Iftar Program
+                        <span class="item-date">Ramadan 2025</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="2025 Iftaar _BG.jpg" alt="Community Iftar">
+                    <div class="item-caption">
+                        Community Iftar Program
+                        <span class="item-date">Ramadan 2025</span>
+                    </div>
+                </div>
+                
+                <!-- <div class="gallery-item">
+                    <img src="images/activity5.jpg" alt="Quran Competition">
+                    <div class="item-caption">
+                        Annual Quran Recitation Competition
+                        <span class="item-date">Ramadan 2025</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <img src="images/activity6.jpg" alt="Islamic Workshop">
+                    <div class="item-caption">
+                        Islamic Workshop for Youth
+                        <span class="item-date">Ramadan 2025</span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+        
+        <div class="video-tab">
+            <div class="gallery">
+                <!-- Replace with your actual videos -->
+                <div class="gallery-item">
+                    <video controls>
+                        <source src="Iftaar Video.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="item-caption">
+                        Community Iftar Program
+                        <span class="item-date">Ramadan 2025</span>
+                    </div>
+                </div>
+                
+                <!-- <div class="gallery-item">
+                    <video controls>
+                        <source src="videos/event2.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="item-caption">
+                        Charity Distribution Event
+                        <span class="item-date">August 15, 2024</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <video controls>
+                        <source src="videos/event3.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="item-caption">
+                        Youth Leadership Training
+                        <span class="item-date">September 1, 2024</span>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <video controls>
+                        <source src="videos/event4.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="item-caption">
+                        Islamic Heritage Exhibition
+                        <span class="item-date">October 5, 2024</span>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>© 2025 Raza Masjid Youth Committee. All rights reserved.</p>
+    </footer>
+    
+    <script>
+        // Tab functionality
+        const tabButtons = document.querySelectorAll('.tab-btn');
+        const tabs = document.querySelectorAll('.image-tab, .video-tab');
+        
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabType = button.getAttribute('data-tab');
+                
+                // Update active button
+                tabButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                // Show active tab
+                tabs.forEach(tab => tab.classList.remove('active'));
+                if (tabType === 'image') {
+                    document.querySelector('.image-tab').classList.add('active');
+                } else {
+                    document.querySelector('.video-tab').classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
